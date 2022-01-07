@@ -1,13 +1,63 @@
-body {
+body, html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color:#fafbfb;
+}
+
+.font{font-size:20px;margin:10px 0;color:#333;}
+
+.layout-content {
+  display: flex;
+}
+.layout-sider .logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+.layout-sider  .menu-list{
+  flex: 1 1 0%;
+  overflow: hidden auto;
+}
+
+.layout-sider  .slider-btn {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+  color: hsla(0,0%,100%,.65);
+  cursor: pointer;
+  transition: border-color .3s,padding .1s cubic-bezier(.215,.61,.355,1);
+}
+.layout-sider  .slider-btn span {
+  display: block;
+  width: 100%;
+  padding-left: 16px;
+}
+.content-header {
+  background: #fff!important;
+  padding: 0!important;
+  text-align: center;
+}
+.content-main {
+  margin: 24px 16px 0!important;
+  overflow: initial!important;
+  min-height: 100vh;
+}
+.main-box {
+  padding: 24px;
+  background: #fff;
+  text-align: center;
+  overflow:scroll;
+}
+
+.card {
+  width: 300px;
+  display: inline-block;
+  margin: 5px 5px 5px 0;
 }
