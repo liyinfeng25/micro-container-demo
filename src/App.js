@@ -7,6 +7,8 @@ import startQiankun from './micro'
 import 'antd/dist/antd.css';
 import "./App.css";
 const { Header, Content, Footer, Sider } = Layout;
+
+// 
 startQiankun()
 
 function App() {
@@ -28,8 +30,8 @@ function App() {
             <Menu.Item key='11'>
               <Link to="/react_createreactapp_demo/todo">react_createreactapp_demo 案例</Link>
             </Menu.Item>
-            <Menu.Item key='11'>
-              <Link to="/vueexample/todo">Vue Todo 案例</Link>
+            <Menu.Item key='22'>
+              <Link to="/vue_cli_demo/">Vue Todo 案例</Link>
             </Menu.Item>
           </Menu>
           
@@ -56,7 +58,7 @@ function App() {
                     />
                   ))}
                 </Switch>
-                <div id="micro" style={{ width: '100%', backgroundColor: 'red'}} />
+                <div id="micro" style={{ width: '100%' }} />
               </div>
             </Content>
             <Footer style={{ textAlign: 'center' }}>底部说明</Footer>
