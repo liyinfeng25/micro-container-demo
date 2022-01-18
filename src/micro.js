@@ -8,7 +8,9 @@
 import { 
   registerMicroApps,
   addGlobalUncaughtErrorHandler,
-  start
+  start,
+  // setDefaultMountApp,
+  // removeGlobalUncaughtErrorHandler
 } from 'qiankun'
 
 // 注册子应用列表
@@ -49,6 +51,14 @@ registerMicroApps(apps, {
 addGlobalUncaughtErrorHandler((e) => {
   console.error('子应用加载异常 ==>', e);
 })
+
+// 移除全局的未捕获异常处理器
+// removeGlobalUncaughtErrorHandler((e) => {
+//   console.error('移除子应用加载异常 ==>', e);
+// })
+
+// 设置自动进入微应用
+// setDefaultMountApp('/vue_cli_demo');
 
 // 导出 qiankun 启动函数
 export default start;
